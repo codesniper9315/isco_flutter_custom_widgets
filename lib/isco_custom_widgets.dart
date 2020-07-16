@@ -1,7 +1,5 @@
 library isco_custom_widgets;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'buttons/index.dart';
+export 'select_options/index.dart';
+export 'text_fields/index.dart';
