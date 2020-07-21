@@ -29,6 +29,8 @@ class PageStyle {
   /// unit height
   double unitHeight;
 
+  double unitFontSize;
+
   PageStyle(BuildContext context, double designWidth, double designHeight) {
     ScreenUtil.init(
       context,
@@ -49,5 +51,6 @@ class PageStyle {
         deviceHeight - statusBarHeight - appBarHeight - bottomBarHeight;
     unitWidth = ScreenUtil().setWidth(1);
     unitHeight = ScreenUtil().setHeight(1);
+    unitFontSize = ScreenUtil().setSp(1);
   }
 }
