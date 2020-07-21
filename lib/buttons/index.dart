@@ -4,3 +4,4 @@ export 'text_icon.dart';
 export 'text_inkwell.dart';
 export 'round_icon_button.dart';
 export 'dropdown_custom.dart';
+export 'round_image_button.dart';
