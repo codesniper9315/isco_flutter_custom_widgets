@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
 class RoundText extends StatelessWidget {
-  /// shape radius of round button
+  /// shape radius of round text
   final double radius;
 
-  /// button color
+  /// background color
   final Color color;
+
+  /// border color
+  final Color borderColor;
+
+  /// width of border
+  final double borderWidth;
 
   /// icon data of icon button
   final String text;
@@ -25,6 +31,8 @@ class RoundText extends StatelessWidget {
   RoundText({
     @required this.radius,
     @required this.color,
+    @required this.borderColor,
+    @required this.borderWidth,
     @required this.text,
     @required this.textSize,
     @required this.textColor,
@@ -39,6 +47,7 @@ class RoundText extends StatelessWidget {
       height: height,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(radius)),
+        border: Border.all(color: borderColor, width: borderWidth),
         color: color,
       ),
       child: Center(
