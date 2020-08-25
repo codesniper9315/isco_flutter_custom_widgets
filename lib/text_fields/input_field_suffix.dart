@@ -55,6 +55,9 @@ class InputFieldSuffix extends StatelessWidget {
   /// space
   final double space;
 
+  /// fill color
+  final Color fillColor;
+
   InputFieldSuffix({
     @required this.width,
     @required this.controller,
@@ -74,6 +77,7 @@ class InputFieldSuffix extends StatelessWidget {
     this.readOnly = false,
     this.onTap,
     this.space = 0,
+    this.fillColor = Colors.white,
   });
 
   @override
@@ -128,6 +132,8 @@ class InputFieldSuffix extends StatelessWidget {
                 color: suffixIconColor,
                 size: suffixIconSize,
               ),
+              fillColor: fillColor,
+              filled: true,
             ),
             readOnly: readOnly,
           ),
