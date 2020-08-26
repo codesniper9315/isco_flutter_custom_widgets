@@ -124,6 +124,7 @@ class _SelectOptionCustomStyle1State extends State<SelectOptionCustomStyle1> {
             widget.values.contains(widget.items[index].toString()));
     return Container(
       width: widget.itemWidth,
+      height: widget.itemHeight,
       child: Stack(
         children: [
           MaterialButton(
