@@ -129,7 +129,7 @@ class InputField extends StatelessWidget {
                   keyboardType: keyboardType,
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(
-                      horizontal: bordered ? 10 : 0,
+                      horizontal: 10,
                       vertical: 0,
                     ),
                     border: bordered
@@ -209,7 +209,7 @@ class InputField extends StatelessWidget {
                   keyboardType: keyboardType,
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(
-                      horizontal: bordered ? 10 : 0,
+                      horizontal: 10,
                       vertical: 0,
                     ),
                     border: bordered
