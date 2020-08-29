@@ -74,16 +74,18 @@ class InputField extends StatelessWidget {
 
   final bool bordered;
 
+  final Color fillColor;
+
   InputField({
     @required this.width,
     @required this.controller,
-    @required this.borderColor,
+    this.borderColor = Colors.transparent,
     @required this.radius,
     @required this.fontSize,
     @required this.fontColor,
-    @required this.hint,
-    @required this.hintColor,
-    @required this.hintSize,
+    this.hint = '',
+    this.hintColor = Colors.grey,
+    this.hintSize = 0,
     @required this.label,
     @required this.labelColor,
     @required this.labelSize,
@@ -100,6 +102,7 @@ class InputField extends StatelessWidget {
     this.maxLines,
     this.focusedColor,
     this.bordered = true,
+    this.fillColor = Colors.white,
   });
 
   @override
