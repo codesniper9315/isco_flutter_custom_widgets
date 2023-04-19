@@ -195,7 +195,7 @@ class InputField extends StatelessWidget {
                   ),
                   readOnly: readOnly,
                   obscureText: obsecureText,
-                  autovalidate: true,
+                  autovalidateMode: AutovalidateMode.always,
                   validator: validator,
                 )
               : TextFormField(
@@ -274,7 +274,7 @@ class InputField extends StatelessWidget {
                     filled: true,
                   ),
                   readOnly: readOnly,
-                  autovalidate: true,
+                  autovalidateMode: AutovalidateMode.always,
                   validator: validator,
                   maxLines: maxLines,
                 ),

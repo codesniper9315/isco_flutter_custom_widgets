@@ -166,7 +166,7 @@ class InputFieldPrefix extends StatelessWidget {
               ),
             ),
             readOnly: readOnly,
-            autovalidate: true,
+            autovalidateMode: AutovalidateMode.always,
             validator: validator,
             maxLines: maxLines,
           ),
